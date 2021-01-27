@@ -1,0 +1,5 @@
+npm run dev
+
+NEXT.JS constroi HTML quando executado, diferente da construção via JS comum
+
+REACT NATIVE tem algumas desvantagens, como dificuldade com BING e primeiro load da página é pesado
