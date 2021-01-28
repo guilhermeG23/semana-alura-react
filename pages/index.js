@@ -67,7 +67,6 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo/>
-        <GitHubCorner projectUrl="https://github.com/guilhermeG23"/>
         <Widget>
           <Widget.Header>
             <Title>Começar Quiz sobre FGO e ver o quão pouca vida social você tem!</Title>
@@ -81,6 +80,7 @@ export default function Home() {
         </Widget>
         <Footer/>
       </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/guilhermeG23"/>    
     </QuizBackground>
   )
 }

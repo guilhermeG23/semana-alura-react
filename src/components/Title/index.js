@@ -1,7 +1,8 @@
 import React from "react";
+import styled from 'styled-components';
 
 function Title(props) {
-    return <h1>{props.children}</h1>
+    return <h2>{props.children}</h2>
 }
 
 export default Title;

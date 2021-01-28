@@ -1,32 +1,34 @@
 import React from "react";
 import styled from "styled-components";
-import db from "../../../db.json"
 
 const EstiloBotao = styled.button.attrs({type: 'submit'})`
-  margin-top: 20px;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.contrastText};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  border: 0;
+  margin-top: 10px;
   width: 100%;
-  box-sizing: border-box;
-  height: 42px;
-  border-radius: ${db.theme.borderRadius};
-  background-color: ${db.theme.colors.primary};
-  color: white;
-  font-size: 24px;
-`
-
-EstiloBotao.Desativado = styled.button`
-  margin-top: 20px;
-  width: 100%;
-  box-sizing: border-box;
-  height: 42px;
-  border-radius: ${db.theme.borderRadius};
-  color: white;
-  font-size: 24px;
-  background-color: ${db.theme.colors.danger};
-`
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  outline: 0;
+  transition: .3s;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+  &:disabled {
+    background-color: #979797;
+    cursor: not-allowed;
+  }
+`;
 
 function BotaoConfirmar(props) {
   if (props.children[1].length === 0) {
-    return <EstiloBotao.Desativado disabled>{props.children}</EstiloBotao.Desativado>
+    return <EstiloBotao disabled>{props.children}</EstiloBotao>
   } else {
     return <EstiloBotao>{props.children}</EstiloBotao>
   }

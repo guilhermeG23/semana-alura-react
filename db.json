@@ -7,29 +7,71 @@
         "image": "https://preview.redd.it/eo7y43dgr6p11.jpg?auto=webp&s=0b2c99488bb2e03c766e75d18ed94116e6a814f4",
         "title": "Classes principais",
         "description": "Qual dessa classes não é uma das 7 principais?",
-        "answer": 3,
+        "answer": "3",
         "alternatives": ["Assassins","Saber","Berserker","Ruler"]
       },
       {
-        "imageApresentacao": "https://i.pinimg.com/originals/41/1a/6a/411a6a5fcfdebfad9f2c20ffb7aec9a1.png",
+        "image": "https://i.pinimg.com/originals/41/1a/6a/411a6a5fcfdebfad9f2c20ffb7aec9a1.png",
         "title": "Errou leva flechada no joelho!",
-        "description": "Qual é a classe com vantagem a Achers",
-        "answer": 2,
+        "description": "Qual é a classe com vantagem a Archers?",
+        "answer": "2",
         "alternatives": ["Saber","Rider","Lancer","Caster"]
       },
       {
-        "imageApresentacao": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/1%20-%20M2UnR2d.png",
+        "image": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/1%20-%20M2UnR2d.png",
         "title": "Se tem espada é um saber... as vezes é...",
         "description": "Saber tem vantagem contra qual classe?",
-        "answer": 0,
+        "answer": "0",
         "alternatives": ["Lancer","Archer","Assassins","Avenger"]
       },
       {
-        "imageApresentacao": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/FateGrand_Order_-_Card_Collect_199.png",
+        "image": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/FateGrand_Order_-_Card_Collect_199.png",
         "title": "Full pistola más ainda apanha!",
         "description": "Qual é a classe que não tem desvantagem contra Berserker por padrão?",
-        "answer": 3,
+        "answer": "3",
         "alternatives": ["Ruler","Avenger","Saber","Foreigner"]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/49/30/82/49308215a32954a6daf28b4bff92ff57.png",
+        "title": "Energético, café e demais para hora do farme!",
+        "description": "Qual destes casters não carregam 50% de barra de aliados:",
+        "answer": "2",
+        "alternatives": ["Waver","Scathe","Merlin","Castoria"]
+      },
+      {
+        "image": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/65%20-%20Yw7Sor9.png",
+        "title": "É difícil usar esses caso tenha.",
+        "description": "Qual desses não é um servo ruim?",
+        "answer": "3",
+        "alternatives": ["Gilles Saber","Beowulf","Stheno","Mozard"]
+      },
+      {
+        "image": "https://i.pinimg.com/564x/03/87/9a/03879adc363eb81d0cbeb061ef745460.jpg",
+        "title": "Não precisa ser GSSR para ter bons servos...",
+        "description": "Qual desses não é um GSSR?",
+        "answer": "1",
+        "alternatives": ["Merlin","Hans","Artoria Saber","Mama Raiko"] 
+      },
+      {
+        "image": "https://static.wikia.nocookie.net/fategrandorder/images/6/66/AF0016.png/revision/latest?cb=20200404150619",
+        "title": "Deus do farm!",
+        "description": "Qual desses tem o NP de dano base (NP1 e sem Buffs) mais forte em área?",
+        "answer": "2",
+        "alternatives": ["Heracles","Saber Alter (Artoria)","Arash","Merlin"]
+      },
+      {
+        "image": "https://gamepress.gg/grandorder/sites/grandorder/files/2020-04/IMG_0837.PNG",
+        "title": "Só suporte né... só que não!",
+        "description": "Qual desses casters não tem ataque em área",
+        "answer": "0",
+        "alternatives": ["Illay","Nitocris","Nursery Rhyme","Hoemhami"]
+      },
+      {
+        "image": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/24%20-%20VQDdXJU.png",
+        "title": "Homens não tem chance aqui!",
+        "description": "Qual desses tem um NP Anti-homens:",
+        "answer": "0",
+        "alternatives": ["Eurialy","Saber alter (Artoria)","Heracles","Jalter Berserker"]
       }
     ],
     "external": [
