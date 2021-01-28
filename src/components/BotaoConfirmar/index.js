@@ -13,12 +13,23 @@ const EstiloBotao = styled.button.attrs({type: 'submit'})`
   font-size: 24px;
 `
 
-function BotaoNome(props) {
+EstiloBotao.Desativado = styled.button`
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 42px;
+  border-radius: ${db.theme.borderRadius};
+  color: white;
+  font-size: 24px;
+  background-color: ${db.theme.colors.danger};
+`
+
+function BotaoConfirmar(props) {
   if (props.children[1].length === 0) {
-    return <EstiloBotao disabled>{props.children}</EstiloBotao>
+    return <EstiloBotao.Desativado disabled>{props.children}</EstiloBotao.Desativado>
   } else {
     return <EstiloBotao>{props.children}</EstiloBotao>
   }
 }
 
-export default BotaoNome;
+export default BotaoConfirmar;

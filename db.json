@@ -1,29 +1,35 @@
 {
-    "bg": "https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg",
+    "bg": "https://wallpaperaccess.com/full/1328652.jpg",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
-        "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
-        ]
+        "image": "https://preview.redd.it/eo7y43dgr6p11.jpg?auto=webp&s=0b2c99488bb2e03c766e75d18ed94116e6a814f4",
+        "title": "Classes principais",
+        "description": "Qual dessa classes não é uma das 7 principais?",
+        "answer": 3,
+        "alternatives": ["Assassins","Saber","Berserker","Ruler"]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "imageApresentacao": "https://i.pinimg.com/originals/41/1a/6a/411a6a5fcfdebfad9f2c20ffb7aec9a1.png",
+        "title": "Errou leva flechada no joelho!",
+        "description": "Qual é a classe com vantagem a Achers",
+        "answer": 2,
+        "alternatives": ["Saber","Rider","Lancer","Caster"]
+      },
+      {
+        "imageApresentacao": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/1%20-%20M2UnR2d.png",
+        "title": "Se tem espada é um saber... as vezes é...",
+        "description": "Saber tem vantagem contra qual classe?",
         "answer": 0,
-        "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
-        ]
+        "alternatives": ["Lancer","Archer","Assassins","Avenger"]
+      },
+      {
+        "imageApresentacao": "https://gamepress.gg/grandorder/sites/grandorder/files/2019-04/FateGrand_Order_-_Card_Collect_199.png",
+        "title": "Full pistola más ainda apanha!",
+        "description": "Qual é a classe que não tem desvantagem contra Berserker por padrão?",
+        "answer": 3,
+        "alternatives": ["Ruler","Avenger","Saber","Foreigner"]
       }
     ],
     "external": [
@@ -36,8 +42,9 @@
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "success": "#4CAF50",
+        "danger": "#c0c0c0"
       },
       "borderRadius": "4px"
     }
-  }
+}

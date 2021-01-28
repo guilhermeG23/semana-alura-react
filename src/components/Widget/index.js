@@ -9,7 +9,8 @@ const Widget = styled.div`
     background-color: #1C1814;
     border-radius: 4px;
     overflow: hidden;
-`
+`;
+
 //Isso faz referencia que esse é um filho de um ja declarado
 Widget.Content = styled.div`
     padding: 24px 32px 32px 32px;
@@ -20,10 +21,11 @@ Widget.Content = styled.div`
     margin-bottom: 0;
     }
     ul {
-    list-style: none;
-    padding: 0;
-}
-`
+        list-style: none;
+        padding: 0;
+    }
+`;
+
 Widget.Header = styled.div`
     display: flex;
     justify-content: flex-start;
@@ -31,7 +33,26 @@ Widget.Header = styled.div`
     padding: 18px 32px;
     background-color: ${({theme}) => theme.colors.primary};
     * {
-    margin: 0%;
-}
-`
+        margin: 0%;
+    }
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
+
 export default Widget;

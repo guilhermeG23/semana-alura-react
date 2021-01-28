@@ -12,9 +12,9 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizContainer from '../src/components/QuizContainer'
 import db from '../db.json';
 import Title from '../src/components/Title';
-import InputNome from '../src/components/InputNome';
-import BotaoNome from '../src/components/BotaoNome';
-import FormNome from '../src/components/FormNome';
+import InputNomeChange from '../src/components/InputNomeChange';
+import BotaoConfirmar from '../src/components/BotaoConfirmar';
+import FormNome from '../src/components/FormRequisicao';
 
 //Styled
 /*
@@ -51,6 +51,13 @@ const BackgroundImage = styled.div`
 
 //Funcao vai representar uma saida
 //    <div style={{ backgroundImage: `url(${db.bg})`}}>
+
+//Boas praticas, usar => em vez de function
+/*
+Ex:
+De: <FormNome onSubmit={function(evento) {evento.preventDefault(); props.router.push(`./quiz?name=${nome}`);}}>
+Para: <FormNome onSubmit={(evento) => {evento.preventDefault(); props.router.push(`./quiz?name=${nome}`);}}>
+*/
 export default function Home() {
   //Tem que ficar para fora do render, ele pode ser chamado mas não instanciado lá
   const router = useRouter();
@@ -59,25 +66,20 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo></QuizLogo>
+        <QuizLogo/>
         <GitHubCorner projectUrl="https://github.com/guilhermeG23"/>
         <Widget>
           <Widget.Header>
-            <Title>Titulo</Title>
+            <Title>Começar Quiz sobre FGO e ver o quão pouca vida social você tem!</Title>
           </Widget.Header>
           <Widget.Content>
-            <FormNome onSubmit={function (evento) {evento.preventDefault(); props.router.push(`./quiz?name=${nome}`);}}>
-              <InputNome onChange={function (evento){ setNome(evento.target.value);}}/>
-              <BotaoNome>Jogador {nome}</BotaoNome>
+            <FormNome onSubmit={(evento) => {evento.preventDefault(); router.push(`/quiz?nome=${nome}`);}}>
+              <InputNomeChange placeholder="Entre com o nome" onChange={(evento) => {setNome(evento.target.value);}} value={nome}/>
+              <BotaoConfirmar>Jogador {nome}</BotaoConfirmar>
             </FormNome>
           </Widget.Content>
         </Widget>
-        <Widget>
-          <Widget.Content>
-            <p>Teste</p>
-          </Widget.Content>
-        </Widget>
-        <Footer></Footer>
+        <Footer/>
       </QuizContainer>
     </QuizBackground>
   )
